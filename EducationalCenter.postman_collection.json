@@ -1,0 +1,682 @@
+{
+	"info": {
+		"_postman_id": "526e5576-d26c-4213-b668-e987956517c6",
+		"name": "EducationalCenter",
+		"description": "Educational Center Controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37952140"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jose Miguel",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Miguelito123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "miguel@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "STUDENT_ROLE",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "courses",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/student/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"student",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jose Miguel",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "Miguelito123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "miguel@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "STUDENT_ROLE",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "courses",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/student/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"student",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jose Miguel",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "MiguelitoNew123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "miguel@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "STUDENT_ROLE",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "courses",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/student/profile/67a978cb7a946d3359e7f701",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"student",
+								"profile",
+								"67a978cb7a946d3359e7f701"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jose Miguel",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "MiguelitoNew123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "miguel@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "STUDENT_ROLE",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "courses",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/student/delete/67a978cb7a946d3359e7f701",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"student",
+								"delete",
+								"67a978cb7a946d3359e7f701"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jose Miguel",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "MiguelitoNew123",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "miguel@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "STUDENT_ROLE",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "courseId",
+									"value": "67a97a6ad7f0b6c0b01b98fc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/student/67a979b87a946d3359e7f709/assign-course",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"student",
+								"67a979b87a946d3359e7f709",
+								"assign-course"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tics",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Tecnologias de la información",
+									"type": "text"
+								},
+								{
+									"key": "teacherId",
+									"value": "67a9771537637ec6c03727c1",
+									"type": "text"
+								},
+								{
+									"key": "students",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/courses/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"courses",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Juan Carlos",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "JCarlos123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jcarlos@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Hola123.",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "TEACHER_ROLE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/teacher/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"teacher",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Courses Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Computación",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Enseñanzas sobre computacion",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jcarlos@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "Hola123.",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "TEACHER_ROLE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/teacher/67a977597c5eba1b8384164b/courses",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"teacher",
+								"67a977597c5eba1b8384164b",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Course",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Computación Actualizada",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Enseñanzas sobre computacion",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jcarlos@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "Hola123.",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "TEACHER_ROLE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/teacher/67a977597c5eba1b8384164b/update/67a97bb5d7f0b6c0b01b9906",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"teacher",
+								"67a977597c5eba1b8384164b",
+								"update",
+								"67a97bb5d7f0b6c0b01b9906"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Course",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Computación Actualizada",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Enseñanzas sobre computacion",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jcarlos@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "Hola123.",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "TEACHER_ROLE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/teacher/67a977597c5eba1b8384164b/update/67a97bb5d7f0b6c0b01b9906",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"teacher",
+								"67a977597c5eba1b8384164b",
+								"update",
+								"67a97bb5d7f0b6c0b01b9906"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Courses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Computación Actualizada",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Enseñanzas sobre computacion",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jcarlos@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "Hola123.",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "TEACHER_ROLE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/teacher/67a977597c5eba1b8384164b/courses",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"teacher",
+								"67a977597c5eba1b8384164b",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Juan Carlos",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "JCarlos123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jcarlos@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "Hola123.",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "TEACHER_ROLE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/teacher/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"teacher",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
