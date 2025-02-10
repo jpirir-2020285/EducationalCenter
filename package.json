@@ -1,0 +1,23 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "Educational Center",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js"
+  },
+  "author": "Jose Miguel Pirir",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "lab2": "file:",
+    "mongoose": "^8.10.0",
+    "morgan": "^1.10.0"
+  },
+  "type": "module"
+}

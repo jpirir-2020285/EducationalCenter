@@ -1,0 +1,611 @@
+{
+	"info": {
+		"_postman_id": "baa440cb-1ae9-42be-adbe-baa48144ec2b",
+		"name": "Practica Supervisada",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37952106"
+	},
+	"item": [
+		{
+			"name": "localhost:1984/student/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "alumno1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "alumno1@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/student/register",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"student",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/student/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "alumno2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "alumno2@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/student/register",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"student",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/student/profile/67a8f88bac7d69383d1ea973",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "alumnoNo1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "alumnoNo1@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/student/profile/67a8f88bac7d69383d1ea973",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"student",
+						"profile",
+						"67a8f88bac7d69383d1ea973"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/student/delete/67a90510d3a48553b07bac7d",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:1984/student/delete/67a90510d3a48553b07bac7d",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"student",
+						"delete",
+						"67a90510d3a48553b07bac7d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/student/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "alumnoNo1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/student/login",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"student",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/student/67a8f88bac7d69383d1ea973/assign-course",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "courseId",
+							"value": "67a905d2d3a48553b07bac88",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/student/67a8f88bac7d69383d1ea973/assign-course",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"student",
+						"67a8f88bac7d69383d1ea973",
+						"assign-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/courses/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Fisica Fundamental",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Comprencion de los cuerpos fisicos",
+							"type": "text"
+						},
+						{
+							"key": "teacherId",
+							"value": "67a90592d3a48553b07bac86",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/courses/register",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"courses",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "profesor1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "profesor1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "securePassword123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/register",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "profesor2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "profesor2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "securePassword456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/register",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "profesor3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "profesor3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "securePassword789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/register",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "profesor4",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "profesor4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "securePassword321",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/register",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "profesor1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "securePassword123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/login",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/67a90592d3a48553b07bac86/courses",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Aplicacion de Fisica",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "experimentacion de los cuerpos en movimiento",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/67a90592d3a48553b07bac86/courses",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"67a90592d3a48553b07bac86",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/67a90491d3a48553b07bac78/update/67a904b8d3a48553b07bac7a",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Ciencias Naturales",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "enseñenzas de las ciencias al rededor del mundo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/67a90491d3a48553b07bac78/update/67a904b8d3a48553b07bac7a",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"67a90491d3a48553b07bac78",
+						"update",
+						"67a904b8d3a48553b07bac7a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/67a90592d3a48553b07bac86/delete/67a905d2d3a48553b07bac88",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/67a90592d3a48553b07bac86/delete/67a905d2d3a48553b07bac88",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"67a90592d3a48553b07bac86",
+						"delete",
+						"67a905d2d3a48553b07bac88"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1984/teacher/67a90592d3a48553b07bac86/courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:1984/teacher/67a90592d3a48553b07bac86/courses",
+					"host": [
+						"localhost"
+					],
+					"port": "1984",
+					"path": [
+						"teacher",
+						"67a90592d3a48553b07bac86",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
